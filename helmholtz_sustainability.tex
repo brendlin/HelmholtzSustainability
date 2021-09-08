@@ -1,0 +1,134 @@
+\documentclass[11pt]{article}
+
+\usepackage[a4paper,left=1.0in,top=1in,right=1.0in,bottom=1in,nofoot,footskip=1cm]{geometry}
+
+\usepackage{xspace}
+\usepackage{soul} %% Wrapped underline with \ul
+\usepackage{hyperref}
+
+%% \usepackage{lineno}
+%% \linenumbers
+
+\title{Active Demand-side Energy Management at DESY\\ 
+       {\large A proposal for supporting a renewable, sustainable, and stable local energy economy}}
+\author{Kurt Brendlinger}
+\date{}
+
+\renewcommand{\refname}{\normalfont\selectfont\normalsize References:}
+
+\begin{document}
+\maketitle
+\thispagestyle{empty}
+
+Climate change mitigation is perhaps the most important existential challenges facing society today.
+%With its dedication to sustainability, DESY has a responsibility to 
+As one of the largest consumers of electricity in the Hamburg region, DESY has both a
+responsibility and a unique opportunity
+to shape the future of the energy system in which it participates, to promote a cleaner, more
+sustainable electrical grid system.
+
+In 2018, DESY consumed roughly 150 GWh of electricity,
+about half of which is used by the DESY accelerator facilities
+(PETRA, FLASH, etc.); around 30\% is consumed for cryogenics,
+and only about 5\% for DESY data centers
+\cite{jensen}.
+With a typical consumption of about 21 MW (about the magnitude of a mid-size wind park),
+DESY has an opportunity to engage in the with the local electricity system, and to adapt its
+operations to the realities of a renewables-dominated electrical grid. 
+
+In Germany today, renewable
+energy accounts for roughly 45\% of power production, which is dominated by wind and solar power,
+both intermittent sources. Germany has dedicated itself to an aggressive timeline to phase out the
+remaining fossil-fuel-based energy sources by 2050; however, reaching this goal will only lead to
+even more intermittency of the electricity supply.
+
+%, and the energy storage capacity required to smooth out these economically challenging conditions.
+%% Sustainable energy economy.
+
+The electricity grid and its operators face \textbf{four main challenges}
+due to the increasing use of renewable energies:
+first, because renewable energies cannot be controlled, periods of \textbf{peak demand}
+or insufficient renewables must be met using conventional power plants (so-called ``peaker plants'')
+that emit CO$_{2}$. Likewise, an over-production of renewable energies when demand is too low
+can lead to operators requiring renewables to shut down (\textbf{curtailment}), effectively
+wasting free electrical energy.
+
+Third, geographical disparities between generation and electrical load can cause
+\textbf{grid congestion}, whereby there is insufficient transmission capacity to transport the
+electricity where it is needed and the transmission cables risk exceeding their
+capacities. Mitigating this effect is costly, requiring transmission system operators to pay
+electricity generators located in areas with higher (lower) loads to produce more (less) energy.
+This process, called \textit{redispatching}, is especially expensive because one electricity
+provider must be paid to generate more energy, while the other must be compensated for lost
+revenue, effectively doubling the energy cost.
+%
+Finally, while weather forecasting is improving significantly, misses in forecasting
+can lead to unforeseen \textbf{schedule deviations} of renewables production, again requiring
+costly and CO$_2$-producing redispatching remedies. As conventional power plants become a
+diminished part of the energy mix, these four challenges pose a significant threat to
+the stability of the electrical grid.
+
+%% Local electricity transmission and distribution operators face three challenges 
+
+As a big power consumer in a major metropolitan area, DESY has the opportunity to work with the
+local energy transmission and distribution network operators to help increase grid stability,
+and avoid costly grid scenarios. By identifying significant flexibilities in its energy use,
+DESY can use a technique called \textbf{demand response} to help mitigate all four of these
+challenges. By pausing accelerator activities, delaying computing resource use,
+or allowing cooling temperatures to rise by a few degrees, for time scales on the order of 15
+minutes to an hour and coordinated with grid system operators, DESY can take an active role in
+achieving a more sustainable energy grid.
+
+Because demand response and flexible loads can help
+solve these problems at low capital cost, they can lower the overall costs of the grid system by
+reducing the need for CO$_2$-emitting reserve capacity power plants or costly storage solutions.
+Because of this, demand
+response or demand-side management services are typically reimbursed by transmission system
+operators, which would serve as a revenue stream for DESY and would potentially offset any
+expenditures in setting up and managing the programme.
+
+Developing an initiative for electricity demand response at DESY would require a concerted effort
+and support from multiple departments within the DESY campus.
+As a first step, DESY would need to identify the flexible loads available at its on-site facilities,
+and engage in a dialogue about balancing the the needs of DESY researchers, external users and
+other stakeholders using these resources.
+DESY would also need to approach transmission and distribution system operators in the Hamburg
+region, and understand the economic and legal framework within which the project would operate.
+Finally, DESY would need to expand its energy monitoring systems and develop the software,
+on-site infrastructure, and communication capabilities for implementing such a system.
+
+With the development of a system of demand-side management, DESY would not only support the
+stability, security, and sustainability of the local electrical grid in Hamburg, but it could
+serve as a model by which other public and private institutions, many of which are significant
+energy consumers operating in metropolitan areas,
+could also implement such a model. By exporting such a system to other institutes and industries,
+DESY could have a far-reaching impact on the resiliency of the entire electrical grid, helping to
+achieve a greater renewable energy penetration faster and at lower overall system costs.
+By actively participating in the electricity grid on which we rely, DESY can help to create a
+cleaner, greener, and more sustainable future.
+
+%% So for instance by pausing our computer clusters we
+%% could remove stress on the grid caused by unexpected renewable forecast deviations.
+
+%%  - Demand response or demand-side management.
+%%  - Reduces the cost of the overall energy system by reducing the need for peaking power plants that use natural gas or other CO$_2$-emitting fuels.
+%%  - DESY has a responsibility to adapt its operations to the realities of a renewables-dominated electrical grid...?
+%%  - DESY has a responsibility to engage in the with the local electricity system, and to adapt its
+%% operations to the realities of a renewables-dominated electrical grid.
+%%  - Schedule deviations
+
+%% Offering computing clusters as a "Flex load" (mentioned in my last email) to help with renewable
+%% energy variability issues. In principle system operators would actually pay to have this
+%% flexibility, so it is potentially a source of revenue for DESY.
+
+
+ %% - Balance the needs of DESY collaboration and external researchers using the DESY on-site faciliies.
+ %% - Develop a model by which other major scientific facilities can implement similar 
+
+\raggedright
+
+\bibliographystyle{hunsrt}
+%\bibliographystyle{natbib}
+\bibliography{helmholtz_sustainability}
+
+\end{document}
